@@ -103,7 +103,7 @@ while run:
             screen.blit(bg3_image, (0, 0))
             draw_text('Game Over', game_font, yellow_font, screen_width - 675, screen_height - 680)
             draw_text('Your Score: ' + str(score), score_font, yellow_font, screen_width - 425, screen_height - 575)
-            draw_text('Level: ' + str(important_stuff.level_count + 1), score_font, yellow_font, screen_width - 405, screen_height - 525)
+            draw_text('Level: ' + str(important_stuff.level_count + 1), score_font, yellow_font, screen_width - 85, screen_height - 525)
 
             if restart_button.draw():
                 score -= important_stuff.world.score_collected
