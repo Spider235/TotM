@@ -22,7 +22,7 @@ bg3_image = pygame.transform.scale(bg3_image, (screen_width, screen_height))
 bg4_image = pygame.image.load(r"Pictures_for_game/totmbg.png")
 bg4_image = pygame.transform.scale(bg4_image, (screen_width, screen_height))
 
-max_levels = 10
+max_levels = 14
 
 
 class LevelStuff:
