@@ -1,8 +1,5 @@
-import pygame
-from coin import *
 from sounds import *
 from settings import important_stuff, screen
-#from Groups import *
 from particle import Particle
 
 
@@ -15,6 +12,11 @@ vel = 15
 
 class Player:
     def __init__(self, pos):
+        self.height = None
+        self.width = None
+        self.rect = None
+        self.vel_x = None
+        self.vel_y = None
         self.reset(pos[0], pos[1])
         self.image = pygame.image.load(r"Pictures_for_game/C1.png")
         self.image = pygame.transform.scale(self.image, (32, 32))
@@ -28,7 +30,6 @@ class Player:
 
         if game_over == 0:
             # get key presses
-            keys = pygame.key.get_pressed()
             if self.vel_x == 0 and self.vel_y == 0:
                 if self.key_left:
                     self.key_left = False
